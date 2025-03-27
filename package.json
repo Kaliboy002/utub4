@@ -1,17 +1,19 @@
 {
-    "name": "youtube-telegram-bot-vercel",
-    "version": "1.0.0",
-    "description": "Telegram Bot for YouTube Video Downloading on Vercel",
-    "main": "api/bot.js",
-    "scripts": {
-        "start": "node api/bot.js",
-        "deploy": "vercel --prod"
-    },
-    "dependencies": {
-        "node-telegram-bot-api": "^0.66.0",
-        "ytdl-core": "^4.11.5"
-    },
-    "engines": {
-        "node": "18.x"
-    }
+  "name": "youtube-downloader-bot",
+  "version": "1.0.0",
+  "description": "A Telegram bot to download YouTube videos, deployed on Vercel",
+  "main": "api/index.js",
+  "scripts": {
+    "start": "vercel dev"
+  },
+  "dependencies": {
+    "telegraf": "^4.16.3",
+    "ytdl-core": "^4.11.5"
+  },
+  "devDependencies": {
+    "vercel": "^32.0.0"
+  },
+  "engines": {
+    "node": "18.x"
+  }
 }
